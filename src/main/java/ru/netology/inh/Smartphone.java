@@ -1,19 +1,18 @@
 package ru.netology.inh;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Smartphone extends Product {
 
-    String manufacturer;
+  private String manufacturer;
 
-    public Smartphone(int ID, String name, int price, String  manufacturer) {
-        super(ID, name, price);
-        this.manufacturer = manufacturer;
-    }
-
-    public String getManufacturer() {
-        return manufacturer;
-    }
-
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
+  public Smartphone(int id, String name, int price, String manufacturer) {
+    super(id, name, price);
+    this.manufacturer = manufacturer;
+  }
 }

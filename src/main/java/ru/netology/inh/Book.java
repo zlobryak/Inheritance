@@ -1,18 +1,19 @@
 package ru.netology.inh;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Book extends Product {
-    String author;
+    private String author;
 
-    public Book(int ID, String name, int price, String author) {
-        super(ID, name, price);
+
+    public Book(int id, String name, int price, String author) {
+        super(id, name, price);
         this.author = author;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
 }

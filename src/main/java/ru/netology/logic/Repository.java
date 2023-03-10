@@ -4,7 +4,7 @@ import ru.netology.inh.Product;
 
 public class Repository {
 
-    Product[] catalog = new Product[0];
+    private Product[] catalog = new Product[0];
 
     public void save(Product item) {
         Product[] tmp = new Product[catalog.length + 1];
@@ -23,7 +23,7 @@ public class Repository {
         Product[] tmp = new Product[catalog.length - 1];
         int copyToIndex = 0;
         for (Product item : catalog) {
-            if (item.getID() != id) {
+            if (item.getId() != id) {
                 tmp[copyToIndex] = item;
                 copyToIndex++;
             }
