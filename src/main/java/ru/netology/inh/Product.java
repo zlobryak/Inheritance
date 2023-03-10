@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Objects;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -24,5 +26,7 @@ public class Product {
             this.price = price;
         } else this.price = 0;
     }
-
+  public boolean matches(String search){
+        return Objects.equals(getName(), search);
+  }
 }
