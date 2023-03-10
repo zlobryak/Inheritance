@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cad49dfb-b88c-49cd-8353-c9be5ed3fd56" name="Changes" comment="">
+    <list default="true" id="cad49dfb-b88c-49cd-8353-c9be5ed3fd56" name="Changes" comment="100% coverage of the logic.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Product.java" afterDir="false" />
@@ -12,7 +12,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/logic/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/logic/ManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/logic/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/logic/RepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,24 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/clych/IdeaProjects/Inheritance/src/main/java/ru/netology&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_directory_selection": "C:/Users/clych/IdeaProjects/Inheritance/src/main/java/ru/netology",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.netology.inh" />
       <recent name="ru.netology.logic" />
     </key>
   </component>
@@ -73,8 +77,8 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerTest.searchByIfContainTwo">
-    <configuration name="ManagerTest.matches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ManagerTest.matchesBookTrue">
+    <configuration name="ManagerTest.matchesBookFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -84,7 +88,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.logic" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="matches" />
+      <option name="METHOD_NAME" value="matchesBookFalse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManagerTest.matchesBookTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.logic" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
+      <option name="METHOD_NAME" value="matchesBookTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerTest.matchesTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest.matchesSmartphoneFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -116,13 +136,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.logic" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="matchesTrue" />
+      <option name="METHOD_NAME" value="matchesSmartphoneFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ManagerTest.searchBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManagerTest.matchesSmartphoneTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -132,23 +152,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.logic" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="searchBy" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerTest.searchByIfContainTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.logic" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="searchByIfContainTwo" />
+      <option name="METHOD_NAME" value="matchesSmartphoneTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManagerTest.searchByIfContainTwo" />
-        <item itemvalue="JUnit.ManagerTest.searchBy" />
-        <item itemvalue="JUnit.ManagerTest.matchesTrue" />
+        <item itemvalue="JUnit.ManagerTest.matchesBookTrue" />
+        <item itemvalue="JUnit.ManagerTest.matchesSmartphoneFalse" />
+        <item itemvalue="JUnit.ManagerTest.matchesSmartphoneTrue" />
+        <item itemvalue="JUnit.ManagerTest.matchesBookFalse" />
         <item itemvalue="JUnit.ManagerTest.matchesFalse" />
-        <item itemvalue="JUnit.ManagerTest.matches" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +190,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678372788115</updated>
     </task>
+    <task id="LOCAL-00001" summary="100% coverage of the logic.">
+      <created>1678471961122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678471961122</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,15 +211,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/logic/Manager.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="100% coverage of the logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="100% coverage of the logic." />
   </component>
 </project>

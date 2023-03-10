@@ -1,12 +1,6 @@
 package ru.netology.inh;
+import java.util.Objects;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
 public class Book extends Product {
     private String author;
 
@@ -15,5 +9,10 @@ public class Book extends Product {
         super(id, name, price);
         this.author = author;
     }
-
+    public boolean matches(String search) {
+        if (super.matches(search)) {
+            return true;
+        }
+        return Objects.equals(author, search);
+    }
 }

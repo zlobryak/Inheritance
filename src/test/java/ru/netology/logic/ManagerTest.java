@@ -44,15 +44,32 @@ class ManagerTest {
 
 
   @Test
-  void matchesTrue() { //Для совпадения при поиске
-    Manager manager = new Manager();
-    Assertions.assertTrue(manager.matches(item1, "BookName"));
+  void matchesProductTrue() { //Для совпадения при поиске
+    Product product = new Book(1, "BookName", 1_000, "AuthorName");
+    Assertions.assertTrue(product.matches("BookName"));
+
   }
 
   @Test
-  void matchesFalse() { //Для несовпадения при поиске
-    Manager manager = new Manager();
-    Assertions.assertFalse(manager.matches(item2, "BookName"));
+  void matchesBookTrue() {
+    Product product = new Book(1, "BookName", 1_000, "AuthorName");
+    Assertions.assertTrue(product.matches("AuthorName"));
+  }
+  @Test
+  void matchesBookFalse() {
+    Product product = new Book(1, "BookName", 1_000, "AuthorName");
+    Assertions.assertFalse(product.matches("Manufacturer"));
+  }
+
+  @Test
+  void matchesSmartphoneTrue() {
+    Product product = new Smartphone(2,"SmartphoneName", 25_000, "Manufacturer");
+    Assertions.assertTrue(product.matches("Manufacturer"));
+  }
+  @Test
+  void matchesSmartphoneFalse() {
+    Product product = new Smartphone(2,"SmartphoneName", 25_000, "Manufacturer");
+    Assertions.assertFalse(product.matches("AuthorName"));
   }
 
   @Test
@@ -65,6 +82,7 @@ class ManagerTest {
     Product[] actual = manager.searchBy("SmartPhoneName");
     Assertions.assertArrayEquals(expected, actual);
   }
+
   @Test
   void searchByIfContainTwo() { //Поиск, если есть 1 результат
     Repository repository = Mockito.mock(Repository.class);
