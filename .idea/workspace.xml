@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Smartphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/logic/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/logic/ManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/logic/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/logic/RepositoryTest.java" afterDir="false" />
@@ -73,8 +72,8 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerTest.searchByIfContainTwo">
-    <configuration name="ManagerTest.matches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ManagerTest.searchByIfContainNone">
+    <configuration name="ManagerTest.searchByIfContainNone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
         <pattern>
@@ -84,55 +83,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.logic" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="matches" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerTest.matchesFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.logic" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="matchesFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerTest.matchesTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.logic" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="matchesTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerTest.searchBy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.logic" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="searchBy" />
+      <option name="METHOD_NAME" value="searchByIfContainNone" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,6 +105,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RepositoryTest.removeById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.logic" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.RepositoryTest" />
+      <option name="METHOD_NAME" value="removeById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.removeByIdWrongId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.logic" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.RepositoryTest" />
+      <option name="METHOD_NAME" value="removeByIdWrongId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.saveAndFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.logic" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.RepositoryTest" />
+      <option name="METHOD_NAME" value="saveAndFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Inheritance" />
       <method v="2">
@@ -169,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManagerTest.searchByIfContainNone" />
+        <item itemvalue="JUnit.RepositoryTest.removeByIdWrongId" />
+        <item itemvalue="JUnit.RepositoryTest.removeById" />
+        <item itemvalue="JUnit.RepositoryTest.saveAndFindAll" />
         <item itemvalue="JUnit.ManagerTest.searchByIfContainTwo" />
-        <item itemvalue="JUnit.ManagerTest.searchBy" />
-        <item itemvalue="JUnit.ManagerTest.matchesTrue" />
-        <item itemvalue="JUnit.ManagerTest.matchesFalse" />
-        <item itemvalue="JUnit.ManagerTest.matches" />
       </list>
     </recent_temporary>
   </component>
@@ -198,16 +197,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/netology/logic/Manager.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

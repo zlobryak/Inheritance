@@ -27,11 +27,15 @@ class RepositoryTest {
     }
 
     @Test
-    void removeById() {
+    void removeById() { // Удаление по id
         repository.removeById(2);
         Product[] expected = {item1};
         Assertions.assertArrayEquals(expected, repository.findAll());
     }
-
-
+    @Test
+    void removeByIdWrongId() { // Если id неправильный
+        repository.removeById(3);
+        Product[] expected = {item1, item2};
+        Assertions.assertArrayEquals(expected, repository.findAll());
+    }
 }

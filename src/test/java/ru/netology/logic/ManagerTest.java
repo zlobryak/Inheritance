@@ -14,8 +14,6 @@ import ru.netology.inh.Smartphone;
 
 
 class ManagerTest {
-
-
   Product item1 = new Book(1, "BookName", 1500, "AuthorName");
   Product item2 = new Smartphone(2, "SmartPhoneName", 25_000, "ManufacturerName");
   Product item3 = new Book(3, "BookName", 1560, "AuthorName");
@@ -23,7 +21,7 @@ class ManagerTest {
 
 
   @Test
-  void FindAllManager() {
+  void FindAllManager() { //Получение всех сохраненных значений.
     Repository repository = Mockito.mock(Repository.class);
     Manager manager = new Manager(repository);
     Product[] repositoryMoc = {item1, item2};
@@ -32,6 +30,7 @@ class ManagerTest {
     Product[] actual = manager.findAll();
     Assertions.assertArrayEquals(repositoryMoc, actual);
   }
+
 
   @Test
   void save() {
@@ -66,13 +65,23 @@ class ManagerTest {
     Assertions.assertArrayEquals(expected, actual);
   }
   @Test
-  void searchByIfContainTwo() { //Поиск, если есть 1 результат
+  void searchByIfContainTwo() { //Поиск, если есть 2 результата
     Repository repository = Mockito.mock(Repository.class);
     Manager manager = new Manager(repository);
     Product[] repositoryMoc = {item1, item2, item3, item4};
     doReturn(repositoryMoc).when(repository).findAll();
     Product[] expected = {item2, item4};
     Product[] actual = manager.searchBy("SmartPhoneName");
+    Assertions.assertArrayEquals(expected, actual);
+  }
+  @Test
+  void searchByIfContainNone() { //Поиск, если нет результатов
+    Repository repository = Mockito.mock(Repository.class);
+    Manager manager = new Manager(repository);
+    Product[] repositoryMoc = {item1, item2, item3, item4};
+    doReturn(repositoryMoc).when(repository).findAll();
+    Product[] expected = new Product[0];
+    Product[] actual = manager.searchBy("NoResults");
     Assertions.assertArrayEquals(expected, actual);
   }
 }
