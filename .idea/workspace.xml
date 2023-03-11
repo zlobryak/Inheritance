@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cad49dfb-b88c-49cd-8353-c9be5ed3fd56" name="Changes" comment="">
+    <list default="true" id="cad49dfb-b88c-49cd-8353-c9be5ed3fd56" name="Changes" comment="Throw exception for findById and tests added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/logic/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/inh/Smartphone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/logic/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/logic/ManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/logic/ManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/logic/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/logic/RepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,12 +18,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -72,7 +74,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerTest.searchByIfContainNone">
+  <component name="RunManager" selected="JUnit.RepositoryTest.removeByIdWhenWrongTest">
     <configuration name="ManagerTest.searchByIfContainNone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
@@ -84,22 +86,6 @@
       <option name="PACKAGE_NAME" value="ru.netology.logic" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
       <option name="METHOD_NAME" value="searchByIfContainNone" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManagerTest.searchByIfContainTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.logic" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.ManagerTest" />
-      <option name="METHOD_NAME" value="searchByIfContainTwo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,6 +107,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RepositoryTest.removeByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.logic" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.RepositoryTest" />
+      <option name="METHOD_NAME" value="removeByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RepositoryTest.removeByIdWhenWrongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaqamvn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.logic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.logic" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.RepositoryTest" />
+      <option name="METHOD_NAME" value="removeByIdWhenWrongTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RepositoryTest.removeByIdWrongId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Javaqamvn" />
       <extension name="coverage">
@@ -132,22 +150,6 @@
       <option name="PACKAGE_NAME" value="ru.netology.logic" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.logic.RepositoryTest" />
       <option name="METHOD_NAME" value="removeByIdWrongId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepositoryTest.saveAndFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Javaqamvn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.logic" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.logic.RepositoryTest" />
-      <option name="METHOD_NAME" value="saveAndFindAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManagerTest.searchByIfContainNone" />
-        <item itemvalue="JUnit.RepositoryTest.removeByIdWrongId" />
+        <item itemvalue="JUnit.RepositoryTest.removeByIdWhenWrongTest" />
+        <item itemvalue="JUnit.RepositoryTest.removeByIdTest" />
         <item itemvalue="JUnit.RepositoryTest.removeById" />
-        <item itemvalue="JUnit.RepositoryTest.saveAndFindAll" />
-        <item itemvalue="JUnit.ManagerTest.searchByIfContainTwo" />
+        <item itemvalue="JUnit.RepositoryTest.removeByIdWrongId" />
+        <item itemvalue="JUnit.ManagerTest.searchByIfContainNone" />
       </list>
     </recent_temporary>
   </component>
@@ -197,5 +199,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Throw exception for findById and tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Throw exception for findById and tests added" />
   </component>
 </project>
