@@ -21,7 +21,7 @@ class RepositoryTest {
 
   @Test
   void saveAndFindAll() {
-    Product item3 = new Product(1, "TestProduct", 1_000);
+    Product item3 = new Product(3, "TestProduct", 1_000);
     repository.save(item3);
 
     Product[] expected = {item1, item2, item3};
@@ -39,6 +39,20 @@ class RepositoryTest {
   public void removeByIdWhenWrongTest() {
     Assertions.assertThrows(NotFoundException.class, () -> {
       repository.removeById(-100);
+    });
+  }
+
+  @Test
+  void saveTestTrue() {
+    Product item3 = new Product(3, "SaveTestProduct", 1_000_000);
+    repository.save(item3);
+    Product[] expected = {item1, item2, item3};
+    Assertions.assertArrayEquals(expected, repository.findAll());
+  }
+  @Test
+  void saveTestFalse() {
+    Assertions.assertThrows(AlreadyExistsException.class, () -> {
+      repository.save(item1);
     });
   }
 }

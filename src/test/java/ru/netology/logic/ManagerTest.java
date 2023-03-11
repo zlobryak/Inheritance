@@ -21,7 +21,7 @@ class ManagerTest {
 
 
   @Test
-  void FindAllManager() { //Получение всех сохраненных значений.
+  void FindAllManagerTest() { //Получение всех сохраненных значений.
     Repository repository = Mockito.mock(Repository.class);
     Manager manager = new Manager(repository);
     Product[] repositoryMoc = {item1, item2};
@@ -33,7 +33,7 @@ class ManagerTest {
 
 
   @Test
-  void save() {
+  void saveTest() {
     Repository repository = new Repository();
     Manager manager = new Manager(repository);
     manager.save(item1);
