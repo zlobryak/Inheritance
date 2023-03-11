@@ -13,7 +13,9 @@ public class Repository {
       }
       tmp[tmp.length - 1] = item;
       catalog = tmp;
-    } else throw new AlreadyExistsException("Element " + item.getName() + "already exists");
+    } else {
+      throw new AlreadyExistsException("Element " + item.getName() + "already exists");
+    }
   }
 
   public Product[] findAll() {
@@ -31,7 +33,9 @@ public class Repository {
         }
         catalog = tmp;
       }
-    } else throw new NotFoundException("Element with id:" + id + "is not found.");
+    } else {
+      throw new NotFoundException("Element with id:" + id + "is not found.");
+    }
   }
 
   public Product findById(int id) {
